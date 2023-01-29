@@ -21,21 +21,21 @@ public class HomeWork3 {
             l2.add(rnd.nextInt(50));
         }
 
-        // l1.forEach(h -> System.out.print(h+" "));
-        // System.out.println();
-        // l2.forEach(h -> System.out.print(h+" "));
-        // System.out.println();
+        l1.forEach(h -> System.out.print(h+" "));
+        System.out.println();
+        l2.forEach(h -> System.out.print(h+" "));
+        System.out.println();
 
-        // l1.removeAll(l2);
-        // l1.forEach(h -> System.out.print(h+" "));
+        l1.removeAll(l2);
+        l1.forEach(h -> System.out.print(h+" "));
 
-        // l2.sort(new Comparator<Integer>() {
-        //     public int compare(Integer t0, Integer t1) {
-        //         return t1 - t0;
-        //     }
-        // });
+        l2.sort(new Comparator<Integer>() {
+            public int compare(Integer t0, Integer t1) {
+                return t1 - t0;
+            }
+        });
 
-        // System.out.println(l2);
+        System.out.println(l2);
         
         Collections.sort(l1);
         System.out.println(l1);
